@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#F5F5F5">
+
+    <!-- Display Section -->
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:gravity="end|center_vertical"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <!-- Fixed GridLayout with 5 columns filling entire width -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="5"
+        android:rowCount="5"
+        android:padding="3dp">
+
+        <!-- Row 1 -->
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/clear"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_plus_minus"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/plus_minus"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_percent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/percent"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_divide"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/divide"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <!-- Make 'sin' lowercase and disable all-caps -->
+        <Button
+            android:id="@+id/btnSin"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="sin"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <!-- Row 2 -->
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/seven"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/eight"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/nine"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_multiply"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/multiply"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <!-- Make 'cos' lowercase and disable all-caps -->
+        <Button
+            android:id="@+id/btnCos"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="cos"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <!-- Row 3 -->
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/four"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/five"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/six"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_subtract"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/subtract"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <!-- Make 'tan' lowercase and disable all-caps -->
+        <Button
+            android:id="@+id/btnTan"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="tan"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <!-- Row 4 -->
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/one"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/two"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/three"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/add"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <!-- Make 'log 10' lowercase and disable all-caps -->
+        <Button
+            android:id="@+id/btnLog10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="log 10"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <!-- Row 5: Ensuring 0 button spans two columns, perfectly aligned -->
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="2"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/zero"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_decimal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/decimal"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_equals"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/equals"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+        <!-- Make 'ln' lowercase and disable all-caps -->
+        <Button
+            android:id="@+id/btnLn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="ln"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+    </GridLayout>
+</LinearLayout>
